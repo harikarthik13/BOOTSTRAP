@@ -9,39 +9,60 @@
   <link rel="stylesheet" href="ASSETS/css/bootstrap.min.css">
   <script src="ASSETS/js/bootstrap.bundle.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-
   <style>
-     #page1 {
+    #page1 {
       background-image: url(ASSETS/IMAGES/topbg.png);
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
-      width:100%;
-    }  
-    #navcontent{
-      font-size:small;
+      width: 100%;
+    }
+
+    #navcontent {
+      font-size: small;
       font-family: 'Quicksand';
     }
+
     #button {
-            background-color: #a9b33b;
-        }
-        
-        #button:hover {
-            background-color: #838b26;
-        }
+      background-color: #a9b33b;
+    }
+
+    #button:hover {
+      background-color: #838b26;
+    }
+
+    #best {
+      color: #a9b33b;
+      font-family: "00819";
+    }
+
+    #pre {
+      color: #ffffff;
+      font-size: larger;
+      font-weight: 700;
+      font-family: "Quicksand";
+    }
+
+    #pre1 {
+      color: #404142;
+      font-weight: 700;
+      font-family: "Quicksand";
+      text-align: center;
+    }
   </style>
 </head>
 
 <body>
+  <!--page 1-->
   <div class="container-fluid" id="page1">
     <div class="row">
       <!-- navbar -->
       <nav class="navbar navbar-expand-lg navbar-light  bg-transparent " id="navbar">
         <!--navbar logo-->
         <div class=" col-3 col-sm-3 col-md-3 col-lg-3 ">
-        <a class="navbar-brand ms-1" href="#">
-          <img src="ASSETS/IMAGES/logo.png" class="img-fluid" width="150px" alt="logo">
-        </a>
-      </div>
+          <a class="navbar-brand ms-1" href="#">
+            <img src="ASSETS/IMAGES/logo.png" class="img-fluid" width="150px" alt="logo">
+          </a>
+        </div>
         <!-- toggle button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
           aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,22 +94,34 @@
             </li>
             <!-- button -->
             <li class="nav-item">
-              <button class="border-0 mt-1 ms-2 ps-2 pe-2 pt-1 pb-1 text-white" id="button" type="submit">GET THE DEAL</button>
+              <button class="border-0 mt-1 ms-2 ps-2 pe-2 pt-1 pb-1 text-white" id="button" type="submit">GET THE
+                DEAL</button>
             </li>
           </ul>
         </div>
       </nav>
     </div>
-    <div class="row" style="height: 630px;">
-      <div class="col-md-6 ">
-
-
-        <button class="btn btn-primary" type="submit">START NOW</button>
+    <div class="row" style="height:500px;">
+      <div class="col-6 col-sm-6 col-md-6 col-lg-6 ms-5 mt-5">
+        <p class="h1" id="best">The Best</p>
+        <pre id="pre">
+REAL ESTATE ANALYSIS 
+SOFTWARE IN NORTH AMERICA</pre>
+        <button class="border-0 ps-2 pe-2 pt-1 pb-1 text-white" id="button" type="submit">START NOW</button>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-6 col-sm-6 col-md-6 col-lg-6">
 
       </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <pre class="col-4 col-sm-4 col-md-4 col-lg-4  ms-5 mt-3" id="pre1">
+      TO MAKE AN INFORMED DECISION WHEN
+       BUYING OR PURCHASING AN INCOME
+                  PROPERTY ! 
+    </pre>
     </div>
   </div>
 
