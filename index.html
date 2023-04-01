@@ -5,48 +5,94 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>BOOTSTRAP</title>
   <link rel="stylesheet" href="ASSETS/css/bootstrap.min.css">
   <script src="ASSETS/js/bootstrap.bundle.min.js"></script>
-  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  -->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 
   <style>
-    #page1{
-      background-image:url(ASSETS/IMAGES/topbg.png);
+     #page1 {
+      background-image: url(ASSETS/IMAGES/topbg.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width:100%;
+    }  
+    #navcontent{
+      font-size:small;
+      font-family: 'Quicksand';
     }
+    #button {
+            background-color: #a9b33b;
+        }
+        
+        #button:hover {
+            background-color: #838b26;
+        }
   </style>
 </head>
 
 <body>
   <div class="container-fluid" id="page1">
-  <nav class=" navbar navbar-expand-lg 
-  navbar-light bg-transparent">
-    <a class="navbar-brand" href="#">
-      <img src="ASSETS/IMAGES/logo.png" width="120" height="50">
-    </a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        
-      </ul>
+    <div class="row">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light  bg-transparent " id="navbar">
+        <!--navbar logo-->
+        <div class=" col-3 col-sm-3 col-md-3 col-lg-3 ">
+        <a class="navbar-brand ms-1" href="#">
+          <img src="ASSETS/IMAGES/logo.png" class="img-fluid" width="150px" alt="logo">
+        </a>
+      </div>
+        <!-- toggle button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar contents -->
+        <div class="collapse navbar-collapse ms-5" id="navcontent">
+          <ul class="navbar-nav ms-auto mb-2 ">
+            <li class="nav-item">
+              <a class="nav-link  text-white" id="home" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" id="plan" href="#">PLANS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" id="learn" href="#">LEARN MORE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" id="widget" href="#">WIDGET</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" id="contact" href="#">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" id="francais" href="#">FRANÇAIS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" id="log" href="#">LOG IN</a>
+            </li>
+            <!-- button -->
+            <li class="nav-item">
+              <button class="border-0 mt-1 ms-2 ps-2 pe-2 pt-1 pb-1 text-white" id="button" type="submit">GET THE DEAL</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  </nav>
-</div>
+    <div class="row" style="height: 630px;">
+      <div class="col-md-6 ">
+
+
+        <button class="btn btn-primary" type="submit">START NOW</button>
+      </div>
+
+      <div class="col-md-6">
+
+      </div>
+    </div>
+  </div>
+
+
 </body>
 
 </html>
