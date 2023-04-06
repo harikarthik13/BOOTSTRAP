@@ -10,18 +10,29 @@
   <script src="ASSETS/js/bootstrap.bundle.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   <style>
-    #page1 {
-      background-image: url(ASSETS/IMAGES/topbg.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 100%;
+  
+    #background{
+            width: 100vw;
     }
 
-    #navcontent {
+     /* css fo background image in page1 */
+     #page1{
+position: absolute;
+top: 0%;
+     }
+
+     .navbar-toggler {
+      background-color: #a9b33b;
+      font-size: small;
+      border: none;
+    }
+
+    #navbarSupportedContent {
       font-size: small;
       font-family: 'Quicksand';
     }
 
+    /*css for button in navbar*/
     #button {
       background-color: #a9b33b;
     }
@@ -29,10 +40,21 @@
     #button:hover {
       background-color: #838b26;
     }
+/*css for new font*/
+@font-face {
+            font-family: 'best';
+            src: url(ASSETS/fonts/00819\ Regular.ttf);
+        }
+
+
+        #bestcontainer{
+          top: 20%;
+          position: absolute;
+    }
 
     #best {
       color: #a9b33b;
-      font-family: "00819";
+      font-family: "best";
     }
 
     #pre {
@@ -46,17 +68,53 @@
       color: #404142;
       font-weight: 700;
       font-family: "Quicksand";
+    }
+
+    /*css for cards image and text*/
+    .card img {
+      width: 50%;
+      height: 50%;
+
+    }
+
+    #cardtext {
+      color: #404142;
+      font-weight: 700;
+      font-family: "Quicksand";
       text-align: center;
     }
+
+    /*css for cards*/
+    .card {
+      border-radius:10px;
+      box-shadow: 10px 10px 25px rgb(185, 185, 185);
+      color: #030303;
+      font-family: "Quicksand";
+    }
+    .card::after{
+      content: '';
+      inset: 0;
+      position: absolute;
+      opacity: 0.3;
+      background-color: #d9e271;
+    }
+    .card:hover{
+      transform: scale(1.1);
+    }
+
+ 
   </style>
 </head>
 
 <body>
+  <div class="cointainer">
+    <img src="ASSETS/IMAGES/topbg.png" class="img-resposive img-fluid" id="background">
+    </div>
   <!--page 1-->
   <div class="container-fluid" id="page1">
     <div class="row">
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light  bg-transparent " id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light  bg-transparent" id="navbar">
         <!--navbar logo-->
         <div class=" col-3 col-sm-3 col-md-3 col-lg-3 ">
           <a class="navbar-brand ms-1" href="#">
@@ -64,34 +122,35 @@
           </a>
         </div>
         <!-- toggle button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <button class="navbar-toggler col-md-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
         <!-- navbar contents -->
-        <div class="collapse navbar-collapse ms-5" id="navcontent">
-          <ul class="navbar-nav ms-auto mb-2 ">
-            <li class="nav-item">
-              <a class="nav-link  text-white" id="home" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" id="plan" href="#">PLANS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" id="learn" href="#">LEARN MORE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" id="widget" href="#">WIDGET</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" id="contact" href="#">CONTACT US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" id="francais" href="#">FRANÇAIS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" id="log" href="#">LOG IN</a>
-            </li>
+        <div class="col-9 ms-2">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
+              <li class="nav-item">
+                <a class="nav-link link-light text-white"  href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light text-white"  href="#">PLANS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light text-white"  href="#">LEARN MORE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light text-white text-white" href="#">WIDGET</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light text-white"  href="#">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light text-white"  href="#">FRANÇAIS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light text-white"href="#">LOG IN</a>
+              </li>
             <!-- button -->
             <li class="nav-item">
               <button class="border-0 mt-1 ms-2 ps-2 pe-2 pt-1 pb-1 text-white" id="button" type="submit">GET THE
@@ -101,28 +160,109 @@
         </div>
       </nav>
     </div>
-    <div class="row" style="height:500px;">
-      <div class="col-6 col-sm-6 col-md-6 col-lg-6 ms-5 mt-5">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 ms-2  col-sm-6 sm-ms-2 col-md-6 md-ms-5 col-lg-6 lg-ms-5 lg-mt-6 " id="bestcontainer">
         <p class="h1" id="best">The Best</p>
         <pre id="pre">
-REAL ESTATE ANALYSIS 
-SOFTWARE IN NORTH AMERICA</pre>
+  REAL ESTATE ANALYSIS 
+  SOFTWARE IN NORTH AMERICA</pre>
         <button class="border-0 ps-2 pe-2 pt-1 pb-1 text-white" id="button" type="submit">START NOW</button>
       </div>
-
+  
       <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-
+  
       </div>
     </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <pre class="col-4 col-sm-4 col-md-4 col-lg-4  ms-5 mt-3" id="pre1">
+  
+
+  <!--container fluid with text content at center-->
+  <div class="container-fluid  mt-3 text-center">
+    <pre id="pre1">
       TO MAKE AN INFORMED DECISION WHEN
        BUYING OR PURCHASING AN INCOME
-                  PROPERTY ! 
+              PROPERTY ! 
     </pre>
-    </div>
+  </div>
+
+  <!--div class container with cards-->
+      <div class="--container">
+        <div class="row justify-content-center">
+          <!--card1-->
+          <a href="" class=" col-md-3 text-decoration-none card text-center border-0 ms-1 ms-lg-0 me-1 mt-3 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
+            id="card-color" style="max-width:min-content;">
+            <div class="card-body p-0">
+              <div class="col-md-3  m-2">
+                <div class=" text-wrap pt-4" style="width: 10rem;height:10rem;">
+                  <img src="ASSETS/IMAGES/card1.png" class="img-fluid mt-1" width="60px" height="56.7px" >
+                  <h6 class="mt-3"><b>User-friendly interface</b></h6>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--card2-->
+          <a href=""
+            class="col-md-3 text-decoration-none  card text-center border-0 ms-1 me-1 mt-3 me-sm-2 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
+            id="card-color" style="max-width:min-content;">
+            <div class="card-body p-0">
+              <div class="col-md-3 m-2">
+                <div class="text-wrap pt-4 "  style="width: 10rem;height:10rem ;">
+                  <img src="ASSETS/IMAGES/card2.png" class="img-fluid" width="60px" height="60px" alt="...">
+                  <h6  class="mt-3"><b>Automatic analysis revision</b></h6>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--card3-->
+          <a href=""
+            class="col-md-3 text-decoration-none  card text-center border-0 ms-1 me-1 me-lg-3 mt-3 me-md- mt-sm-3 mt-md-3"
+            id="card-color" style="max-width:min-content;">
+            <div class="card-body p-0">
+              <div class="col-md-3 m-2">
+                <div class="text-wrap pt-4 ps-4 pe-4"  style="width: 10rem;height:10rem ;">
+                  <img src="ASSETS/IMAGES/card3.png" class="img-fluid" width="60px" height="60px" alt="...">
+                  <h6  class="mt-3"><b>Step-by-step data gathering</b></h6>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--card4-->
+          <a href=""
+            class="col-md-3 card text-decoration-none  text-center border-0 ms-1 me-1 me-md-1 me-lg-3 me-sm-3 mt-3 mt-sm-3 mt-md-3"
+            id="card-color" style="max-width:min-content;">
+            <div class="card-body p-0">
+              <div class="col-md-3  m-2">
+                <div class="text-wrap pt-4"  style="width: 10rem;height:10rem ;">
+                  <img src="ASSETS/IMAGES/card4.png" class="img-fluid" width="60px" height="60px" alt="...">
+                  <h6  class="mt-3"><b>Sell price evaluation feature</b></h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <!---->
+      <div class="container">
+        <div class="row">
+          <div class="col-7 p-3">
+            <h6>Analyze any kind of Real </h6>
+             <h6> Estate investment</h6>
+             <p>iAnalyzeREI can handle all sorts of income-producing Real Estate (Multifamily, commercial, plexes, etc.). Moreover, the reports produced by iAnalyzeREI are well-illustrated to accurately pinpoint the advantages of living in a plex rather than renting an apartment.
+    
+              Multi-family or commercial properties can also be analyzed, regardless of their size, thanks to special features that adapt to the building's type. For a residential lease, you should enter the number of rooms, the apartment’s surface, the rent, included services, etc. While gathering information to register a commercial lease, you will be able to enter even more specifications according to the rent such as: common space, occupied space, initial rent cost, operating expenses, etc.
+              
+              </p>
+          </div>
+          <div class="col-5">
+            <img src="assests/images/phone.png" class="img-fluid p-4" width="60%"  alt="...">
+          </div>
+         
+        </div>
+      </div>
+
+    
   </div>
 
 
