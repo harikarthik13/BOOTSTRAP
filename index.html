@@ -10,18 +10,21 @@
   <script src="ASSETS/js/bootstrap.bundle.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   <style>
-  
-    #background{
-            width: 100vw;
+    body {
+      overflow-x: hidden;
     }
 
-     /* css fo background image in page1 */
-     #page1{
-position: absolute;
-top: 0%;
-     }
+    #background {
+      width: 100vw;
+    }
 
-     .navbar-toggler {
+    /* css fo background image in page1 */
+    #page1 {
+      position: absolute;
+      top: 0%;
+    }
+
+    .navbar-toggler {
       background-color: #a9b33b;
       font-size: small;
       border: none;
@@ -39,17 +42,20 @@ top: 0%;
 
     #button:hover {
       background-color: #838b26;
+      transform: scale(1.1);
+
     }
-/*css for new font*/
-@font-face {
-            font-family: 'best';
-            src: url(ASSETS/fonts/00819\ Regular.ttf);
-        }
+
+    /*css for new font*/
+    @font-face {
+      font-family: 'best';
+      src: url(ASSETS/fonts/00819\ Regular.ttf);
+    }
 
 
-        #bestcontainer{
-          top: 20%;
-          position: absolute;
+    #bestcontainer {
+      top: 20%;
+      position: absolute;
     }
 
     #best {
@@ -57,14 +63,22 @@ top: 0%;
       font-family: "best";
     }
 
-    #pre {
+    #page1content {
       color: #ffffff;
-      font-size: larger;
+      font-size: x-large;
       font-weight: 700;
       font-family: "Quicksand";
     }
 
-    #pre1 {
+    #page2content {
+      color: #404142;
+      font-weight: bolder;
+      font-size: large;
+      font-family: "Quicksand";
+    }
+
+    #analyze,
+    p {
       color: #404142;
       font-weight: 700;
       font-family: "Quicksand";
@@ -86,30 +100,69 @@ top: 0%;
 
     /*css for cards*/
     .card {
-      border-radius:10px;
+      border-radius: 10px;
       box-shadow: 10px 10px 25px rgb(185, 185, 185);
       color: #030303;
       font-family: "Quicksand";
     }
-    .card::after{
+
+    .card::after {
       content: '';
       inset: 0;
       position: absolute;
       opacity: 0.3;
       background-color: #d9e271;
     }
-    .card:hover{
+
+    .card:hover {
       transform: scale(1.1);
     }
 
- 
+    /*css for innerrow in page 3*/
+    #innerrowcontent {
+      font-family: "Quicksand";
+      color: #404142;
+      font-weight: 900;
+      font-size: large;
+      text-transform: uppercase;
+    }
+
+    #innerrowimg:hover {
+      transform: scale(1.1);
+    }
+
+    #page3para,
+    #page4para {
+      font-family: "Quicksand";
+      font-weight: 600;
+      color: #565656;
+      font-size: 15px;
+    }
+
+    /*css for contents in page 4*/
+    #bgcontainer {
+      background-color: #f3f4e8;
+    }
+
+    #zoom {
+      color: #404142;
+      font-weight: bolder;
+      font-size: xx-large;
+      font-family: "Quicksand";
+    }
+
+    #page4content {
+      color: #404142;
+      font-weight: 700;
+      font-family: "Quicksand";
+    }
   </style>
 </head>
 
 <body>
   <div class="cointainer">
     <img src="ASSETS/IMAGES/topbg.png" class="img-resposive img-fluid" id="background">
-    </div>
+  </div>
   <!--page 1-->
   <div class="container-fluid" id="page1">
     <div class="row">
@@ -123,147 +176,200 @@ top: 0%;
         </div>
         <!-- toggle button -->
         <button class="navbar-toggler col-md-auto" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span></button>
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span></button>
         <!-- navbar contents -->
         <div class="col-9 ms-2">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
               <li class="nav-item">
-                <a class="nav-link link-light text-white"  href="#">HOME</a>
+                <a class="nav-link link-light text-white" href="#">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-light text-white"  href="#">PLANS</a>
+                <a class="nav-link link-light text-white" href="#">PLANS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-light text-white"  href="#">LEARN MORE</a>
+                <a class="nav-link link-light text-white" href="#">LEARN MORE</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link link-light text-white text-white" href="#">WIDGET</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-light text-white"  href="#">CONTACT US</a>
+                <a class="nav-link link-light text-white" href="#">CONTACT US</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-light text-white"  href="#">FRANÇAIS</a>
+                <a class="nav-link link-light text-white" href="#">FRANÇAIS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-light text-white"href="#">LOG IN</a>
+                <a class="nav-link link-light text-white" href="#">LOG IN</a>
               </li>
-            <!-- button -->
-            <li class="nav-item">
-              <button class="border-0 mt-1 ms-2 ps-2 pe-2 pt-1 pb-1 text-white" id="button" type="submit">GET THE
-                DEAL</button>
-            </li>
-          </ul>
-        </div>
+              <!-- button -->
+              <li class="nav-item">
+                <button class="border-0 mt-1 ms-2 ps-2 pe-2 pt-1 pb-1 text-white" id="button" type="submit">GET THE
+                  DEAL</button>
+              </li>
+            </ul>
+          </div>
       </nav>
     </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-6 ms-2  col-sm-6 sm-ms-2 col-md-6 md-ms-5 col-lg-6 lg-ms-5 lg-mt-6 " id="bestcontainer">
+      <div class="col-12  col-sm-9 col-md-7  col-lg-10  " id="bestcontainer">
         <p class="h1" id="best">The Best</p>
-        <pre id="pre">
-  REAL ESTATE ANALYSIS 
-  SOFTWARE IN NORTH AMERICA</pre>
-        <button class="border-0 ps-2 pe-2 pt-1 pb-1 text-white" id="button" type="submit">START NOW</button>
+        <h6 id="page1content"> REAL ESTATE ANALYSIS </h6>
+        <h6 id="page1content">SOFTWARE IN NORTH AMERICA</h6>
+        <button class="border-0 ms-3 ps-2 pe-2 pt-1 pb-1 text-white" id="button" type="submit">START NOW</button>
       </div>
-  
-      <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-  
+
+      <div class="col-4 col-sm-6 col-md-6 col-lg-6">
+
       </div>
     </div>
-  
+  </div>
+
 
   <!--container fluid with text content at center-->
-  <div class="container-fluid  mt-3 text-center">
-    <pre id="pre1">
-      TO MAKE AN INFORMED DECISION WHEN
-       BUYING OR PURCHASING AN INCOME
-              PROPERTY ! 
-    </pre>
+  <div class="container-fluid col-12 mt-3 text-center ">
+    <h6 id="page2content">TO MAKE AN INFORMED DECISION WHEN</h6>
+    <h6 id="page2content">   BUYING OR PURCHASING AN INCOME</h6>
+    <h6 id="page2content">PROPERTY ! </h6>
   </div>
 
   <!--div class container with cards-->
-      <div class="--container">
-        <div class="row justify-content-center">
-          <!--card1-->
-          <a href="" class=" col-md-3 text-decoration-none card text-center border-0 ms-1 ms-lg-0 me-1 mt-3 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
-            id="card-color" style="max-width:min-content;">
-            <div class="card-body p-0">
-              <div class="col-md-3  m-2">
-                <div class=" text-wrap pt-4" style="width: 10rem;height:10rem;">
-                  <img src="ASSETS/IMAGES/card1.png" class="img-fluid mt-1" width="60px" height="56.7px" >
-                  <h6 class="mt-3"><b>User-friendly interface</b></h6>
-                </div>
-              </div>
+  <div class="--container">
+    <div class="row justify-content-center">
+      <!--card1-->
+      <a href=""
+        class=" col-md-3 text-decoration-none card text-center border-0 ms-1 ms-lg-0 me-1 mt-3 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
+        id="card-color" style="max-width:min-content;">
+        <div class="card-body p-0">
+          <div class="col-md-3  m-2">
+            <div class=" text-wrap pt-4" style="width: 10rem;height:10rem;">
+              <img src="ASSETS/IMAGES/card1.png" class="img-fluid mt-1" width="60px" height="56.7px">
+              <h6 class="mt-3"><b>User-friendly interface</b></h6>
             </div>
-          </a>
-          <!--card2-->
-          <a href=""
-            class="col-md-3 text-decoration-none  card text-center border-0 ms-1 me-1 mt-3 me-sm-2 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
-            id="card-color" style="max-width:min-content;">
-            <div class="card-body p-0">
-              <div class="col-md-3 m-2">
-                <div class="text-wrap pt-4 "  style="width: 10rem;height:10rem ;">
-                  <img src="ASSETS/IMAGES/card2.png" class="img-fluid" width="60px" height="60px" alt="...">
-                  <h6  class="mt-3"><b>Automatic analysis revision</b></h6>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!--card3-->
-          <a href=""
-            class="col-md-3 text-decoration-none  card text-center border-0 ms-1 me-1 me-lg-3 mt-3 me-md- mt-sm-3 mt-md-3"
-            id="card-color" style="max-width:min-content;">
-            <div class="card-body p-0">
-              <div class="col-md-3 m-2">
-                <div class="text-wrap pt-4 ps-4 pe-4"  style="width: 10rem;height:10rem ;">
-                  <img src="ASSETS/IMAGES/card3.png" class="img-fluid" width="60px" height="60px" alt="...">
-                  <h6  class="mt-3"><b>Step-by-step data gathering</b></h6>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!--card4-->
-          <a href=""
-            class="col-md-3 card text-decoration-none  text-center border-0 ms-1 me-1 me-md-1 me-lg-3 me-sm-3 mt-3 mt-sm-3 mt-md-3"
-            id="card-color" style="max-width:min-content;">
-            <div class="card-body p-0">
-              <div class="col-md-3  m-2">
-                <div class="text-wrap pt-4"  style="width: 10rem;height:10rem ;">
-                  <img src="ASSETS/IMAGES/card4.png" class="img-fluid" width="60px" height="60px" alt="...">
-                  <h6  class="mt-3"><b>Sell price evaluation feature</b></h6>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      
-      <!---->
-      <div class="container">
-        <div class="row">
-          <div class="col-7 p-3">
-            <h6>Analyze any kind of Real </h6>
-             <h6> Estate investment</h6>
-             <p>iAnalyzeREI can handle all sorts of income-producing Real Estate (Multifamily, commercial, plexes, etc.). Moreover, the reports produced by iAnalyzeREI are well-illustrated to accurately pinpoint the advantages of living in a plex rather than renting an apartment.
-    
-              Multi-family or commercial properties can also be analyzed, regardless of their size, thanks to special features that adapt to the building's type. For a residential lease, you should enter the number of rooms, the apartment’s surface, the rent, included services, etc. While gathering information to register a commercial lease, you will be able to enter even more specifications according to the rent such as: common space, occupied space, initial rent cost, operating expenses, etc.
-              
-              </p>
           </div>
-          <div class="col-5">
-            <img src="assests/images/phone.png" class="img-fluid p-4" width="60%"  alt="...">
-          </div>
-         
         </div>
-      </div>
-
-    
+      </a>
+      <!--card2-->
+      <a href=""
+        class="col-md-3 text-decoration-none  card text-center border-0 ms-1 me-1 mt-3 me-sm-2 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
+        id="card-color" style="max-width:min-content;">
+        <div class="card-body p-0">
+          <div class="col-md-3 m-2">
+            <div class="text-wrap pt-4 " style="width: 10rem;height:10rem ;">
+              <img src="ASSETS/IMAGES/card2.png" class="img-fluid" width="60px" height="60px" alt="...">
+              <h6 class="mt-3"><b>Automatic analysis revision</b></h6>
+            </div>
+          </div>
+        </div>
+      </a>
+      <!--card3-->
+      <a href=""
+        class="col-md-3 text-decoration-none  card text-center border-0 ms-1 me-1 me-lg-3 mt-3 me-md- mt-sm-3 mt-md-3"
+        id="card-color" style="max-width:min-content;">
+        <div class="card-body p-0">
+          <div class="col-md-3 m-2">
+            <div class="text-wrap pt-4 ps-4 pe-4" style="width: 10rem;height:10rem ;">
+              <img src="ASSETS/IMAGES/card3.png" class="img-fluid" width="60px" height="60px" alt="...">
+              <h6 class="mt-3"><b>Step-by-step data gathering</b></h6>
+            </div>
+          </div>
+        </div>
+      </a>
+      <!--card4-->
+      <a href=""
+        class="col-md-3 card text-decoration-none  text-center border-0 ms-1 me-1 me-md-1 me-lg-3 me-sm-3 mt-3 mt-sm-3 mt-md-3"
+        id="card-color" style="max-width:min-content;">
+        <div class="card-body p-0">
+          <div class="col-md-3  m-2">
+            <div class="text-wrap pt-4" style="width: 10rem;height:10rem ;">
+              <img src="ASSETS/IMAGES/card4.png" class="img-fluid" width="60px" height="60px" alt="...">
+              <h6 class="mt-3"><b>Sell price evaluation feature</b></h6>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
+
+  <!--page 3 with contents and mobile phone-->
+  <div class="container">
+    <div class="row">
+      <div class="col-10 col-sm-10 col-md-6 col-lg-7 mt-5  ms-auto">
+        <h4 id="analyze">ANALYZE ANY KIND OF REAL </h4>
+        <h4 id="analyze"> ESTATE INVESTMENT</h4>
+        <p id="page3para">iAnalyzeREI can handle all sorts of income-producing Real Estate (Multifamily, commercial,
+          plexes,
+          etc.). Moreover, the reports produced by iAnalyzeREI are well-illustrated to accurately pinpoint the
+          advantages of living in a plex rather than renting an apartment.</p>
+
+        <p id="page3para"> Multi-family or commercial properties can also be analyzed, regardless of their size,
+          thanks to special features that adapt to the building's type. For a residential lease,
+          you should enter the number of rooms, the apartment’s surface, the rent, included services,
+          etc. While gathering information to register a commercial lease, you will be able to enter
+          even more specifications according to the rent such as: common space, occupied space,
+          initial rent cost, operating expenses, etc.
+        </p>
+        <div class="row" id="innerrow">
+          <div class=" col-6 col-sm-6 col-md-6"><a href="" class="text-decoration-none"><img
+                src="ASSETS/IMAGES/quantity.png" class="img-fluid p-2" id="innerrowimg">
+              <h6 id="innerrowcontent"> Unlimited apartment</h6>
+              <h6 id="innerrowcontent">quantities</h6>
+            </a>
+          </div>
+          <div class=" col-6 col-sm-6 col-md-6"> <a href="" class="text-decoration-none"><img
+                src="ASSETS/IMAGES/adaptive.png" class="img-fluid p-2" id="innerrowimg">
+                <h6 id="innerrowcontent">Commercial leases</h6>
+                  <h6 id="innerrowcontent">specially adapted</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-1 col-sm-1 col-md-6 col-lg-4 ">
+        <img src="ASSETS/IMAGES/mobile.png" class="img-fluid p-4">
+      </div>
+    </div>
+  </div>
+
+  <!--container fluid page 4-->
+  <div class="container-fluid" id="bgcontainer">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-4 ms-5">
+          <img src="ASSETS/IMAGES/lap.png" class="img-fluid p-4">
+        </div>
+
+        <div class=" col-md-7">
+          <h6 id="zoom">Zoom-imm is an essential</h6>
+          <h6 id="zoom">tool for all Real Estate</h6>
+          <h6 id="zoom">professionals!</h6>
+          <p id="page4para">Not only is iAnalyzeREI professional and dynamic, filled with pertinent information,
+            it also produces quality reports. The information displayed makes the report easy to
+            read and understand, even for novices. Try it and see for yourself. Choose the complete
+            report or the abbreviated version, according to your needs. You can even tell the
+            software exactly what information to print so that the report has everything you
+            want and nothing you don’t.</p>
+
+          <p id="page4para">If you want to add a personal touch, your picture and your logo can also be inserted in the
+            document.</p>
+          <h6 id="page4content">Complete report, colorful and legible</h6>
+          <h6 id="page4content">Available abbreviated version </h6> 
+            <h6 id="page4content">Professional aspect  </h6>
+              <h6 id="page4content">Personalize document for your client, friend or financial institution</h6>
+          <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">  <button class="border-0 ms-5 ps-3 pe-3 pt-1 pb-1 text-white" id="button" type="submit">VIEW SAMPLE REPORT</button>
+            </div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 
 
 </body>
