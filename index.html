@@ -10,6 +10,26 @@
   <script src="ASSETS/js/bootstrap.bundle.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   <style>
+    /*media queries*/
+    /* @media (max-width: 700px) {
+#bestcontainer {
+  width: 40%;
+  margin-top: -140px;
+  
+    } 
+    #page1content{
+      font-size:small;
+    }
+  }
+  @media (min-width: 900px) {
+#bestcontainer {
+  width: 40%;
+  
+    } 
+    #page1content{
+      font-size:large;
+    }
+  } */
     body {
       overflow-x: hidden;
     }
@@ -152,9 +172,54 @@
     }
 
     #page4content {
-      color: #404142;
+      color: #565656;
       font-weight: 700;
       font-family: "Quicksand";
+    }
+
+    /*css for table in page 5*/
+    .table {
+      width: 75%;
+      border-style: hidden;
+    }
+
+    .table th {
+      background-color: #a9b33b;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #eceed1;
+    }
+
+    #tablepara {
+      font-size: 8px;
+      font-family: "Quicksand";
+    }
+
+    #plan {
+      width: 70%;
+      font-family: "Quicksand";
+      font-size: 40px;
+    }
+
+    #full {
+      width: 15%;
+      font-family: "Quicksand";
+    }
+
+    #light {
+      width: 18%;
+      font-family: "Quicksand";
+    }
+    .table thead th:first-child{
+      border-top-left-radius:10px;
+    }
+    .table thead th:last-child{
+      border-top-right-radius:10px;
     }
   </style>
 </head>
@@ -214,26 +279,26 @@
       </nav>
     </div>
   </div>
-  <div class="container">
+  <!-- <div class="container">
     <div class="row">
       <div class="col-12  col-sm-9 col-md-7  col-lg-10  " id="bestcontainer">
         <p class="h1" id="best">The Best</p>
         <h6 id="page1content"> REAL ESTATE ANALYSIS </h6>
         <h6 id="page1content">SOFTWARE IN NORTH AMERICA</h6>
-        <button class="border-0 ms-3 ps-2 pe-2 pt-1 pb-1 text-white" id="button" type="submit">START NOW</button>
+        <button class="border-0 ms-1 ps-2 pe-2 pt-1 pb-1 text-white" id="button" type="submit">START NOW</button>
       </div>
 
       <div class="col-4 col-sm-6 col-md-6 col-lg-6">
 
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <!--container fluid with text content at center-->
   <div class="container-fluid col-12 mt-3 text-center ">
     <h6 id="page2content">TO MAKE AN INFORMED DECISION WHEN</h6>
-    <h6 id="page2content">   BUYING OR PURCHASING AN INCOME</h6>
+    <h6 id="page2content"> BUYING OR PURCHASING AN INCOME</h6>
     <h6 id="page2content">PROPERTY ! </h6>
   </div>
 
@@ -322,8 +387,8 @@
           </div>
           <div class=" col-6 col-sm-6 col-md-6"> <a href="" class="text-decoration-none"><img
                 src="ASSETS/IMAGES/adaptive.png" class="img-fluid p-2" id="innerrowimg">
-                <h6 id="innerrowcontent">Commercial leases</h6>
-                  <h6 id="innerrowcontent">specially adapted</h6>
+              <h6 id="innerrowcontent">Commercial leases</h6>
+              <h6 id="innerrowcontent">specially adapted</h6>
             </a>
           </div>
         </div>
@@ -338,11 +403,11 @@
   <div class="container-fluid" id="bgcontainer">
     <div class="container">
       <div class="row ">
-        <div class="col-md-4 ms-5">
+        <div class="col-md-5 ms-5">
           <img src="ASSETS/IMAGES/lap.png" class="img-fluid p-4">
         </div>
 
-        <div class=" col-md-7">
+        <div class=" col-md-6">
           <h6 id="zoom">Zoom-imm is an essential</h6>
           <h6 id="zoom">tool for all Real Estate</h6>
           <h6 id="zoom">professionals!</h6>
@@ -356,20 +421,69 @@
           <p id="page4para">If you want to add a personal touch, your picture and your logo can also be inserted in the
             document.</p>
           <h6 id="page4content">Complete report, colorful and legible</h6>
-          <h6 id="page4content">Available abbreviated version </h6> 
-            <h6 id="page4content">Professional aspect  </h6>
-              <h6 id="page4content">Personalize document for your client, friend or financial institution</h6>
+          <h6 id="page4content">Available abbreviated version </h6>
+          <h6 id="page4content">Professional aspect </h6>
+          <h6 id="page4content">Personalize document for your client, friend or financial institution</h6>
           <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">  <button class="border-0 ms-5 ps-3 pe-3 pt-1 pb-1 text-white" id="button" type="submit">VIEW SAMPLE REPORT</button>
-            </div></div>
+            <div class="col-4 col-sm-6 col-md-4"></div>
+            <div class="col-8 col-sm-6 col-md-8"> <button class="border-0 ms-5 ps-3 pe-3 pt-1 pb-1 text-white"
+                id="button" type="submit">VIEW SAMPLE REPORT</button>
+            </div>
           </div>
         </div>
-
       </div>
+
     </div>
   </div>
 
+  <!--page 5 with table-->
+  <div class="container mt-5 ms-auto me-auto">
+    <table class="table bdr ms-auto me-auto">
+      <thead>
+        <tr>
+          <th class="text-white" id="plan">Plans</th>
+          <th class="text-white" id="full">
+            <h6>FULL</h6>
+            <p class="text-white" id="tablepara">Have complete control over all the analysis parameters</p>
+          </th>
+          <th class="text-white" id="light">
+            <h6>LIGHT</h6>
+            <p class="text-white" id="tablepara">The best way to analyze properties & print pro reports</p>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Général
+            Market your properties on the web !
+            Your properties will be accessible from anywhere to anyone! Add links to your website, newsletter, e-mails,
+            etc.
+            Click here to view a sample
+          </td>
+          <td>Row 1, Column 2</td>
+          <td>Row 1, Column 3</td>
+        </tr>
+        <tr>
+          <td>Data
+            Flexible mortgage (frequency, amortization, interest rate)</td>
+          <td>Row 2, Column 2</td>
+          <td>Row 2, Column 3</td>
+        </tr>
+        <tr>
+          <td>Unlimited number of mortgages to finance a property (balance of sale, 2nd mortgage, collateral)
+            all this, under different conditions (interest rate, payment frequency, etc.)</td>
+          <td>Row 1, Column 2</td>
+          <td>Row 1, Column 3</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Row 1, Column 2</td>
+          <td>Row 1, Column 3</td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
 
 
 </body>
