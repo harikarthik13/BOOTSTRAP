@@ -9,219 +9,7 @@
   <link rel="stylesheet" href="ASSETS/css/bootstrap.min.css">
   <script src="ASSETS/js/bootstrap.bundle.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-  <style>
-    /*media queries*/
-    /* @media (max-width: 700px) {
-#bestcontainer {
-  width: 40%;
-  margin-top: -140px;
-  
-    } 
-    #page1content{
-      font-size:small;
-    }
-  }
-  @media (min-width: 900px) {
-#bestcontainer {
-  width: 40%;
-  
-    } 
-    #page1content{
-      font-size:large;
-    }
-  } */
-    body {
-      overflow-x: hidden;
-    }
-
-    #background {
-      width: 100vw;
-    }
-
-    /* css fo background image in page1 */
-    #page1 {
-      position: absolute;
-      top: 0%;
-    }
-
-    .navbar-toggler {
-      background-color: #a9b33b;
-      font-size: small;
-      border: none;
-    }
-
-    #navbarSupportedContent {
-      font-size: small;
-      font-family: 'Quicksand';
-    }
-
-    /*css for button in navbar*/
-    #button {
-      background-color: #a9b33b;
-    }
-
-    #button:hover {
-      background-color: #838b26;
-      transform: scale(1.1);
-
-    }
-
-    /*css for new font*/
-    @font-face {
-      font-family: 'best';
-      src: url(ASSETS/fonts/00819\ Regular.ttf);
-    }
-
-
-    #bestcontainer {
-      top: 20%;
-      position: absolute;
-    }
-
-    #best {
-      color: #a9b33b;
-      font-family: "best";
-    }
-
-    #page1content {
-      color: #ffffff;
-      font-size: x-large;
-      font-weight: 700;
-      font-family: "Quicksand";
-    }
-
-    #page2content {
-      color: #404142;
-      font-weight: bolder;
-      font-size: large;
-      font-family: "Quicksand";
-    }
-
-    #analyze,
-    p {
-      color: #404142;
-      font-weight: 700;
-      font-family: "Quicksand";
-    }
-
-    /*css for cards image and text*/
-    .card img {
-      width: 50%;
-      height: 50%;
-
-    }
-
-    #cardtext {
-      color: #404142;
-      font-weight: 700;
-      font-family: "Quicksand";
-      text-align: center;
-    }
-
-    /*css for cards*/
-    .card {
-      border-radius: 10px;
-      box-shadow: 10px 10px 25px rgb(185, 185, 185);
-      color: #030303;
-      font-family: "Quicksand";
-    }
-
-    .card::after {
-      content: '';
-      inset: 0;
-      position: absolute;
-      opacity: 0.3;
-      background-color: #d9e271;
-    }
-
-    .card:hover {
-      transform: scale(1.1);
-    }
-
-    /*css for innerrow in page 3*/
-    #innerrowcontent {
-      font-family: "Quicksand";
-      color: #404142;
-      font-weight: 900;
-      font-size: large;
-      text-transform: uppercase;
-    }
-
-    #innerrowimg:hover {
-      transform: scale(1.1);
-    }
-
-    #page3para,
-    #page4para {
-      font-family: "Quicksand";
-      font-weight: 600;
-      color: #565656;
-      font-size: 15px;
-    }
-
-    /*css for contents in page 4*/
-    #bgcontainer {
-      background-color: #f3f4e8;
-    }
-
-    #zoom {
-      color: #404142;
-      font-weight: bolder;
-      font-size: xx-large;
-      font-family: "Quicksand";
-    }
-
-    #page4content {
-      color: #565656;
-      font-weight: 700;
-      font-family: "Quicksand";
-    }
-
-    /*css for table in page 5*/
-    .table {
-      width: 75%;
-      border-style: hidden;
-    }
-
-    .table th {
-      background-color: #a9b33b;
-    }
-
-    tr:nth-child(odd) {
-      background-color: #ffffff;
-    }
-
-    tr:nth-child(even) {
-      background-color: #eceed1;
-    }
-
-    #tablepara {
-      font-size: 8px;
-      font-family: "Quicksand";
-    }
-
-    #plan {
-      width: 70%;
-      font-family: "Quicksand";
-      font-size: 40px;
-    }
-
-    #full {
-      width: 15%;
-      font-family: "Quicksand";
-    }
-
-    #light {
-      width: 18%;
-      font-family: "Quicksand";
-    }
-    .table thead th:first-child{
-      border-top-left-radius:10px;
-    }
-    .table thead th:last-child{
-      border-top-right-radius:10px;
-    }
-  </style>
+<link rel="stylesheet" href="ASSETS/css/external.css">
 </head>
 
 <body>
@@ -393,7 +181,7 @@
           </div>
         </div>
       </div>
-      <div class="col-1 col-sm-1 col-md-6 col-lg-4 ">
+      <div class="col-0 col-sm-0 col-md-6 col-lg-4 ">
         <img src="ASSETS/IMAGES/mobile.png" class="img-fluid p-4">
       </div>
     </div>
@@ -403,11 +191,11 @@
   <div class="container-fluid" id="bgcontainer">
     <div class="container">
       <div class="row ">
-        <div class="col-md-5 ms-5">
+        <div class="col-8 col-sm-8  col-md-6 ms-5">
           <img src="ASSETS/IMAGES/lap.png" class="img-fluid p-4">
         </div>
 
-        <div class=" col-md-6">
+        <div class=" col-md-5">
           <h6 id="zoom">Zoom-imm is an essential</h6>
           <h6 id="zoom">tool for all Real Estate</h6>
           <h6 id="zoom">professionals!</h6>
@@ -442,6 +230,7 @@
       <thead>
         <tr>
           <th class="text-white" id="plan">Plans</th>
+          <th></th>
           <th class="text-white" id="full">
             <h6>FULL</h6>
             <p class="text-white" id="tablepara">Have complete control over all the analysis parameters</p>
@@ -454,32 +243,68 @@
       </thead>
       <tbody>
         <tr>
-          <td>Général
+          <td id="tablecontent" >Général
             Market your properties on the web !
             Your properties will be accessible from anywhere to anyone! Add links to your website, newsletter, e-mails,
             etc.
             Click here to view a sample
           </td>
-          <td>Row 1, Column 2</td>
-          <td>Row 1, Column 3</td>
-        </tr>
-        <tr>
-          <td>Data
-            Flexible mortgage (frequency, amortization, interest rate)</td>
-          <td>Row 2, Column 2</td>
-          <td>Row 2, Column 3</td>
-        </tr>
-        <tr>
-          <td>Unlimited number of mortgages to finance a property (balance of sale, 2nd mortgage, collateral)
-            all this, under different conditions (interest rate, payment frequency, etc.)</td>
-          <td>Row 1, Column 2</td>
-          <td>Row 1, Column 3</td>
-        </tr>
-        <tr>
           <td></td>
-          <td>Row 1, Column 2</td>
-          <td>Row 1, Column 3</td>
+          <td><img class="ms-3 mt-2" src="ASSETS/IMAGES/tick.png"></td>
+          <td><img class="ms-3 mt-2" src="ASSETS/IMAGES/tick.png"></td>
         </tr>
+        <tr>
+          <td id="tablecontent">Data
+            Flexible mortgage (frequency, amortization, interest rate)</td>
+            <td></td>
+            <td><img class="ms-3 mt-2" src="ASSETS/IMAGES/tick.png"></td>
+            <td><img class="ms-3 mt-2" src="ASSETS/IMAGES/tick.png"></td>
+        </tr>
+        <tr>
+          <td id="tablecontent">Unlimited number of mortgages to finance a property (balance of sale, 2nd mortgage, collateral)
+            all this, under different conditions (interest rate, payment frequency, etc.)</td>
+            <td></td>
+            <td><img class="ms-3 mt-2" src="ASSETS/IMAGES/tick.png"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td id="tablecontent">Unlimited number of income sources</td>
+          <td></td>
+          <td><img class="ms-3 mt-2" src="ASSETS/IMAGES/tick.png"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td id="tablecontent">Modify the inflation of income and expenses independently for each year in the financial forecast.
+            Detailed leases (multifamily and commercial). Unlimited number of leases. (Start date, length, tenants,
+            included services, etc.)
+            Possibility to increase the rent for every lease.
+          </td>
+          <td></td>
+          <td><img class="ms-3 mt-2" src="ASSETS/IMAGES/tick.png"></td>
+          <td><img class="ms-3 mt-2" src="ASSETS/IMAGES/tick.png"></td>
+        </tr>
+        <tr>
+          <td id="tablecontent">Support and subscription
+            FREE technical support by E-mail and toll-free number.
+            No contract! No activation fees! No penalties! You can stop using iAnalyzeREI whenever you decide!
+            </td>
+            <td></td>
+            <td><img class="ms-3 mt-2" src="ASSETS/IMAGES/tick.png"></td>
+          <td><img class="ms-3 mt-2"  src="ASSETS/IMAGES/tick.png"></td>
+        </tr>
+        <tr>
+          <td rowspan="2">plan
+              prices
+
+          </td>
+          <td>monthly
+            Annual contract
+          </td>
+          <td>$42.80/month
+            $37.32/month
+          </td>
+          <td> $16.05/month</td>
+      </tr>
       </tbody>
 
     </table>

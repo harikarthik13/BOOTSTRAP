@@ -1,0 +1,250 @@
+/*media queries*/
+/* @media (max-width: 700px) {
+#bestcontainer {
+width: 40%;
+margin-top: -140px;
+
+} 
+#page1content{
+  font-size:small;
+}
+}
+@media (min-width: 900px) {
+#bestcontainer {
+width: 40%;
+
+} 
+#page1content{
+  font-size:large;
+}
+} */
+body {
+    overflow-x: hidden;
+}
+
+#background {
+    width: 100vw;
+}
+
+/* css fo background image in page1 */
+#page1 {
+    position: absolute;
+    top: 0%;
+}
+
+.navbar-toggler {
+    background-color: #a9b33b;
+    font-size: small;
+    border: none;
+}
+
+#navbarSupportedContent {
+    font-size: small;
+    font-family: 'Quicksand';
+}
+
+/*css for button in navbar*/
+#button {
+    background-color: #a9b33b;
+}
+
+#button:hover {
+    background-color: #838b26;
+    transform: scale(1.1);
+
+}
+
+/*css for new font*/
+@font-face {
+    font-family: 'best';
+    src: url(ASSETS/fonts/00819\ Regular.ttf);
+}
+
+
+#bestcontainer {
+    top: 20%;
+    position: absolute;
+}
+
+#best {
+    color: #a9b33b;
+    font-family: "best";
+}
+
+#page1content {
+    color: #ffffff;
+    font-size: x-large;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+#page2content {
+    color: #404142;
+    font-weight: bolder;
+    font-size: large;
+    font-family: "Quicksand";
+}
+
+#analyze,
+p {
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+/*css for cards image and text*/
+.card img {
+    width: 50%;
+    height: 50%;
+
+}
+
+#cardtext {
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+    text-align: center;
+}
+
+/*css for cards*/
+.card {
+    border-radius: 10px;
+    box-shadow: 10px 10px 25px rgb(185, 185, 185);
+    color: #030303;
+    font-family: "Quicksand";
+}
+
+.card::after {
+    content: '';
+    inset: 0;
+    position: absolute;
+    opacity: 0.3;
+    background-color: #d9e271;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/*css for innerrow in page 3*/
+#innerrowcontent {
+    font-family: "Quicksand";
+    color: #404142;
+    font-weight: 900;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+#innerrowimg:hover {
+    transform: scale(1.1);
+}
+
+#page3para,
+#page4para {
+    font-family: "Quicksand";
+    font-weight: 600;
+    color: #565656;
+    font-size: 15px;
+}
+
+/*css for contents in page 4*/
+#bgcontainer {
+    background-color: #f3f4e8;
+}
+
+#zoom {
+    color: #404142;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: "Quicksand";
+}
+
+#page4content {
+    color: #565656;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+/*css for table in page 5*/
+.table {
+    width: 75%;
+    border-style: hidden;
+}
+
+.table th {
+    background-color: #a9b33b;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #eceed1;
+}
+
+#tablepara {
+    font-size: 8px;
+    font-family: "Quicksand";
+}
+
+#plan {
+    width: 70%;
+    font-family: "Quicksand";
+    font-size: 40px;
+}
+
+#full {
+    width: 15%;
+    font-family: "Quicksand";
+}
+
+#light {
+    width: 18%;
+    font-family: "Quicksand";
+}
+
+.table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.table thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+#tablecontent {
+    font-size: 11px;
+    line-height: 14px;
+    color: #404142;
+    font-weight: 500;
+    font-family: "Quicksand";
+    white-space:pre-line;
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: rgba(255, 255, 255, 0);
+}
+
+td:last-child {
+    box-shadow: 0 0.2rem 0.2em rgba(0, 0, 0, 0.4);
+}
+
+th:last-child {
+    box-shadow: 0 0.2rem 0.2em rgba(0, 0, 0, 0.4);
+}
+
+th:nth-child(3) {
+    box-shadow: 0 0.5rem 0.5em rgba(0, 0, 0, 0.4);
+}
+
+td:nth-child(3) {
+    box-shadow: 0 0.5rem 0.5em rgba(0, 0, 0, 0.4);
+}
