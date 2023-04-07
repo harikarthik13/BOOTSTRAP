@@ -207,23 +207,13 @@ tr:nth-child(even) {
 .table thead th:first-child {
     border-top-left-radius: 10px;
 }
-
-.table thead th:first-child {
-    border-top-left-radius: 10px;
-}
-
 .table thead th:last-child {
     border-top-right-radius: 10px;
 }
 
-.table thead th:first-child {
-    border-top-left-radius: 10px;
-}
-
 #tablecontent {
-    font-size: 11px;
-    line-height: 14px;
-    color: #404142;
+    font-size: 10px;
+    color: #0a0a0a;
     font-weight: 500;
     font-family: "Quicksand";
     white-space:pre-line;
@@ -242,9 +232,22 @@ th:last-child {
 }
 
 th:nth-child(3) {
-    box-shadow: 0 0.5rem 0.5em rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.2rem 0.2em rgba(0, 0, 0, 0.4);
 }
 
 td:nth-child(3) {
-    box-shadow: 0 0.5rem 0.5em rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.2rem 0.5em rgba(0, 0, 0, 0.4);
+}
+
+#price{
+    font-size: 25px;
+line-height: 14px;
+color: #aab33b;
+font-weight: 700;
+font-family: "Quicksand";
+border-bottom-left-radius:10px;
+}
+
+#lastdata{
+    border-bottom-right-radius:10px;
 }
