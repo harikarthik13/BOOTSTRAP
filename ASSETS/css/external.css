@@ -168,7 +168,7 @@ p {
 /*css for table in page 5*/
 .table {
     width: 75%;
-    border-style:hidden;
+    border-style: hidden;
 }
 
 .table th {
@@ -207,6 +207,7 @@ tr:nth-child(even) {
 .table thead th:first-child {
     border-top-left-radius: 10px;
 }
+
 .table thead th:last-child {
     border-top-right-radius: 10px;
 }
@@ -216,8 +217,9 @@ tr:nth-child(even) {
     color: #0a0a0a;
     font-weight: 500;
     font-family: "Quicksand";
-    white-space:pre-line;
+    white-space: pre-line;
 }
+
 td:last-child {
     box-shadow: 0 0.2rem 0.5em rgba(109, 109, 109, 0.4);
 }
@@ -226,51 +228,55 @@ th:last-child {
     box-shadow: 0 0.2rem 0.5em rgba(0, 0, 0, 0.4);
 }
 
-th:nth-child(2)  {
+th:nth-child(2) {
     box-shadow: 0 0.2rem 0.5em rgba(0, 0, 0, 0.4);
 }
 
 td:nth-child(2) {
     box-shadow: 0 0.2rem 0.5em rgba(109, 109, 109, 0.4);
 }
+
 th:nth-child(1) {
     box-shadow: 0 0.2rem 0.2em rgba(0, 0, 0, 0.4);
 }
+
 td:nth-child(1) {
     box-shadow: 0 0.2rem 0.2em rgba(0, 0, 0, 0.4);
 }
 
-#price{
+#price {
     font-size: 25px;
-line-height: 14px;
-color: #aab33b;
-font-weight: 700;
-font-family: "Quicksand";
-border-bottom-left-radius:14px;
-}
-.bottom {
-    box-shadow: 0px 15px 10px -1px rgba(0, 0, 0, 0.4)11;    
-  }
-#lastrow{
-    font-size: 14px;
-line-height: 30px;
-color: #404142;
-font-weight: 700;
-font-family: "Quicksand";
-white-space:pre-line;
-}
-.month{
-    text-align: right;
-    float: right;
+    line-height: 14px;
+    color: #aab33b;
+    font-weight: 700;
+    font-family: "Quicksand";
+    border-bottom-left-radius: 14px;
 }
 
-#lastdata{
+.bottom {
+    box-shadow: 0px 15px 10px -1px rgba(0, 0, 0, 0.4)11;
+}
+
+#lastrow {
     font-size: 14px;
     line-height: 30px;
     color: #404142;
     font-weight: 700;
     font-family: "Quicksand";
-    border-bottom-right-radius:14px;
+    white-space: pre-line;
+}
+
+.month {
+    text-align: right;
+}
+
+#lastdata {
+    font-size: 14px;
+    line-height: 30px;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+    border-bottom-right-radius: 14px;
 }
 
 /*css for page 6*/
@@ -300,6 +306,39 @@ white-space:pre-line;
 #click:hover {
     color: #5f6517;
 }
+
+/*css for card in page 6*/
+.--card:hover{
+    transform: scale(1.1);
+    transition:ease-out ;
+}
+#innercard {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    background-color: #fdffe9;
+    margin-left: 50px;
+    margin-top:-40px;
+    position: relative;
+    z-index: 1;
+}
+#botcard123{
+    height: 238px;
+}
+#innercardtext {
+    flex: 1;
+}
+
+#innerpara {
+    margin-top: auto;
+    font-size: 13px;
+    color: #313132;
+    font-weight: 600;
+    font-family: "Quicksand";
+}
+
 
 /*css for footer in page 7*/
 .footer-bg {
@@ -360,10 +399,21 @@ white-space:pre-line;
     color: white;
 }
 
-.form-control{
-    border:none;
+.form-control {
+    border: none;
     outline: 0px;
 }
+
 #addon-wrapping {
     background-color: #acb643;
+}
+
+#basefoot{
+    background-color: #aab33c;
+}
+#basefoottext{
+font-size: 13px;
+letter-spacing: 2px;
+font-weight: 500;
+font-family: "Quicksand";
 }
