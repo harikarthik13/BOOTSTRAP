@@ -17,7 +17,14 @@ width: 40%;
 #page1content{
   font-size:large;
 }
-} */
+}  */
+
+@media (max-width: 380px){
+    #mobile,#lap{
+        display: none;
+    }
+}
+
 body {
     overflow-x: hidden;
 }
@@ -56,8 +63,8 @@ body {
 
 /*css for new font*/
 @font-face {
-    font-family: 'best';
-    src: url(ASSETS/fonts/00819\ Regular.ttf);
+    font-family:"best";
+    src: url(ASSETS\fonts\00819 Regular.ttf);
 }
 
 
@@ -68,7 +75,7 @@ body {
 
 #best {
     color: #a9b33b;
-    font-family: "best";
+    font-family:"best";
 }
 
 #page1content {
@@ -317,7 +324,6 @@ td:nth-child(1) {
     align-items: center;
     width: 100%;
     max-width: 300px;
-    border: 1px solid #ccc;
     background-color: #fdffe9;
     margin-left: 50px;
     margin-top:-40px;
