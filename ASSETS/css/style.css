@@ -1,30 +1,64 @@
 /*media queries*/
-/* @media (max-width: 700px) {
-#bestcontainer {
-width: 40%;
-margin-top: -140px;
 
-} 
-#page1content{
-  font-size:small;
-}
-}
-@media (min-width: 900px) {
-#bestcontainer {
-width: 40%;
+@media (max-width: 710px){
+    #page1content{
+        display: none;
+    }
+    #bestcontainer{
+        margin-top: -50px;
+    }
 
-} 
-#page1content{
-  font-size:large;
 }
-}  */
 
+@media (max-width: 570px){
+    #bestcontainer{
+        margin-top: -60px;
+    }
+}
+@media (max-width: 400px){
+    #bestcontainer{
+        margin-top: -100px;
+        line-height: 15px;
+    }
+}
+@media (max-width: 275px){
+    #bestcontainer{
+        margin-top: -120px;
+        
+    }
+}
 @media (max-width: 380px){
     #mobile,#lap{
         display: none;
     }
 }
-
+@media (max-width: 370px){
+    #innercardcontainer{
+        margin-left:-50px;
+        width:90%;
+    }
+}
+@media (max-width: 715px){
+    #support{
+        font-size: xx-small; 
+    }
+}
+@media (max-width: 300px){
+    #support{
+        font-size:8px; 
+    }
+}
+@media (max-width: 280px){
+    #support{
+        font-size:5px; 
+    }
+}
+@media (max-width: 350px){
+    #tab{
+      width:60%;  
+    }
+}
+/*css*/
 body {
     overflow-x: hidden;
 }
@@ -63,19 +97,20 @@ body {
 
 /*css for new font*/
 @font-face {
-    font-family:"best";
-    src: url(ASSETS\fonts\00819 Regular.ttf);
+    font-family:"best" ;
+    src: url(/ASSETS/fonts/00819\ Regular.ttf);
 }
 
 
 #bestcontainer {
-    top: 20%;
+    top: 30%;
     position: absolute;
 }
 
 #best {
     color: #a9b33b;
-    font-family:"best";
+    font-family:"best" ;
+
 }
 
 #page1content {
@@ -332,9 +367,11 @@ td:nth-child(1) {
 }
 #botcard123{
     height: 238px;
+    font-size: small;
 }
 #innercardtext {
     flex: 1;
+    font-size: small;
 }
 
 #innerpara {
