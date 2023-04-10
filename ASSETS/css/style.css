@@ -58,6 +58,30 @@
       width:60%;  
     }
 }
+@media (max-width: 750px){
+    #clickcontent{
+     font-size:small;
+     margin-top:-20px;
+    }
+}
+@media (max-width: 570px){
+    #clickcontent{
+     font-size:xx-small;
+     margin-top:-20px;
+    }
+}
+@media (max-width: 410px){
+    #clickcontent{
+     font-size:8px;
+     margin-top:-20px;
+    }
+}
+    @media (max-width: 350px){
+        #clickcontent{
+         font-size: 5px;
+         margin-top:-20px;
+        }
+}
 /*css*/
 body {
     overflow-x: hidden;
