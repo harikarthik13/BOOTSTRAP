@@ -460,3 +460,7 @@ letter-spacing: 2px;
 font-weight: 500;
 font-family: "Quicksand";
 }
+/*css for jquerry validation*/
+form .error{
+    color: #f30707;
+  }

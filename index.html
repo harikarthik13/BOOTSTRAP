@@ -11,6 +11,11 @@
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   <link rel="stylesheet" href="ASSETS/css/style.css">
   <script src="https://kit.fontawesome.com/d509f79d02.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+  <script src="ASSETS/js/validation.js"></script>
+
 </head>
 
 <body>
@@ -423,17 +428,18 @@
               </div>
           </div>
           <div class="col-6 col-sm-3 col-md-3  mt-4">
+            <form id="myform">
               <div class="input-group flex-nowrap mb-2">
                   <span class="input-group-text icon" id="addon-wrapping"><i class="fa-solid fa-user" id="fav-2"></i></span>
-                  <input type="text" class="form-control" placeholder="Username">
+                  <input type="text" class="form-control" placeholder="Username" name="pass">
               </div>
               <div class="input-group flex-nowrap mb-2">
                   <span class="input-group-text icon" id="addon-wrapping"><i class="fa-regular fa-envelope" id="fav-2" ></i></span>
-                  <input type="email" class="form-control" placeholder="Email">
+                  <input type="email" class="form-control" placeholder="Email" name="mail">
               </div>
               <div class="input-group flex-nowrap mb-2">
                   <span class="input-group-text icon" id="addon-wrapping"><i class="fa-sharp fa-solid fa-square-phone" id="fav-2"></i></span>
-                  <input type="text" class="form-control" placeholder="Phone">
+                  <input type="text" class="form-control" placeholder="Phone" name="mbl">
               </div>
               <div class="input-group flex-nowrap mb-2">
                   <span class="input-group-text icon" id="addon-wrapping"><i class="fa-solid fa-comment" id="fav-2"></i></span>
@@ -442,6 +448,7 @@
               <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                   <button class="rounded-1 but-footer ps-3 pe-3" type="button">SUBMIT</button>
               </div>
+            </form>
           </div>
       </div>
   </div>
