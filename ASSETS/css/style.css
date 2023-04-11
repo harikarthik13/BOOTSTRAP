@@ -405,7 +405,34 @@ td:nth-child(1) {
     font-weight: 600;
     font-family: "Quicksand";
 }
+/* page 6 button content */
 
+#p8script {
+    font-size: 35px;
+    line-height: 46px;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+    text-align: center;
+  
+  }
+  
+  #p8bt {
+    width: 235px;
+    height: 47px;
+    border: none;
+    background-color: #a9b33b;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Quicksand";
+  
+  }
+  
+  #p8 {
+    padding: 25px;
+  }
 
 /*css for footer in page 7*/
 .footer-bg {
@@ -488,3 +515,5 @@ font-family: "Quicksand";
 form .error{
     color: #f30707;
   }
+
+
